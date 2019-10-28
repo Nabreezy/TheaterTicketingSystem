@@ -27,9 +27,8 @@ public class CTicketBiz {
         _mutex = new ReentrantLock(true);
     }
 
-
-    // Get a ticket randomly
-    public synchronized int GetRandTicket(){
+    // Gets a ticket randomly
+    public  int GetRandTicket(){
         if (m_nBalanceNum <= 0)
             return 0;
         int temp = 0;
@@ -42,7 +41,7 @@ public class CTicketBiz {
         return temp + 1;
     }
     // Get the remaining ticket number
-    public synchronized int GetBalanceNum(){
+    public  int GetBalanceNum(){
         return m_nBalanceNum;
 
     }

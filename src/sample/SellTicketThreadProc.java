@@ -5,8 +5,8 @@ import javafx.scene.control.TextArea;
 public class SellTicketThreadProc implements Runnable {
     private CTicketBiz cTicketBiz;
 private TextArea ta;
-    public SellTicketThreadProc(CTicketBiz newobj){
-        cTicketBiz = newobj;
+    public SellTicketThreadProc(CTicketBiz cTicketBiz){
+        this.cTicketBiz = cTicketBiz;
     }
  // method calls GetRandomTicket() and GetBalance then prints the output
     public  void sellticket(){
