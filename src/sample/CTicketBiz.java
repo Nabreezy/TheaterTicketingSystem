@@ -24,8 +24,7 @@ public class CTicketBiz {
         }
     }
 
-
-    // Get a ticket randomly
+    // Gets a ticket randomly
     public  int GetRandTicket(){
         if (m_nBalanceNum <= 0)
             return 0;
