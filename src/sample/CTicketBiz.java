@@ -11,7 +11,6 @@ public class CTicketBiz {
     private int m_nTotalNum;
 
 
-
     // Generate the ticket. Initialize the movie ticket array.
     void GenerateTicket(int totalTickets){
         m_pTicket = new ArrayList<Ticket>();

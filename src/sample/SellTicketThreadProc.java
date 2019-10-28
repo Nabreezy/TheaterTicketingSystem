@@ -1,8 +1,9 @@
 package sample;
 
+import javafx.application.Platform;
 import javafx.scene.control.TextArea;
 
-public class SellTicketThreadProc implements Runnable {
+public class SellTicketThreadProc implements Runnable{
     private CTicketBiz cTicketBiz;
 private TextArea ta;
     public SellTicketThreadProc(CTicketBiz cTicketBiz){
@@ -21,8 +22,14 @@ private TextArea ta;
             default:
                 color = ThreadColor.ANSI_GREEN;
         }
-        System.out.println(color + Thread.currentThread().getName() + " Random number: " + cTicketBiz.GetRandTicket() + "  Remaining tickets are: " + cTicketBiz.GetBalanceNum() );
+        int randticket = cTicketBiz.GetRandTicket();
+        System.out.println(color + Thread.currentThread().getName() + " Random number: " + randticket + "  Remaining tickets are: " + cTicketBiz.GetBalanceNum() );
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
 
+            }
+        });
     }
 
     // this is the run method and the while loop keeps looping untill there is no more tickets
