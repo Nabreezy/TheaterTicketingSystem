@@ -26,7 +26,7 @@ public class Controller  {
         if(e.getSource().equals(startSelling)){
 
         CTicketBiz cTicketBiz = new CTicketBiz();
-          cTicketBiz.GenerateTicket(6);
+          cTicketBiz.GenerateTicket(30);
           SellTicketThreadProc tw = new SellTicketThreadProc(cTicketBiz);
           Thread t1 = new Thread (tw,"Thread 1");
           Thread t2 = new Thread (tw,"Thread 2");
