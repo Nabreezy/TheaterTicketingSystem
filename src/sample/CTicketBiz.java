@@ -3,6 +3,8 @@ package sample;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Random;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.Lock;
 
 public class CTicketBiz {
 
@@ -10,7 +12,7 @@ public class CTicketBiz {
     private int m_nSoldNum; // Sold ticket number
     private int m_nBalanceNum; // Remaining ticket number
     private int m_nTotalNum;
-
+    private Lock _mutex;
 
 
     // Generate the ticket. Initialize the movie ticket array.
@@ -22,6 +24,7 @@ public class CTicketBiz {
         for (int i = 0; i < m_nTotalNum; i++) {
             m_pTicket[i] = i + 1;
         }
+        _mutex = new ReentrantLock(true);
     }
 
 
