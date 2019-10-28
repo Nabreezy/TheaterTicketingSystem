@@ -26,7 +26,7 @@ public class CTicketBiz {
 
 
     // Get a ticket randomly
-    public synchronized int GetRandTicket(){
+    public  int GetRandTicket(){
         if (m_nBalanceNum <= 0)
             return 0;
         int temp = 0;
@@ -39,7 +39,7 @@ public class CTicketBiz {
         return temp + 1;
     }
     // Get the remaining ticket number
-    public synchronized int GetBalanceNum(){
+    public  int GetBalanceNum(){
         return m_nBalanceNum;
 
     }
