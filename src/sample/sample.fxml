@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
@@ -14,16 +15,30 @@
       <ColumnConstraints />
       <ColumnConstraints />
       <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-       <Button fx:id="startSelling" mnemonicParsing="false" onAction="#onButtonClicked" text="Start Selling" GridPane.columnIndex="3" />
+       <Button fx:id="startSelling" layoutX="5.0" mnemonicParsing="false" onAction="#onButtonClicked" text="Start Selling" GridPane.columnIndex="3">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
        <TextField fx:id="ticketsToSell" onKeyReleased="#handleKeyReleased" GridPane.columnIndex="1" />
        <Label text="Total number" />
-       <TextArea fx:id="displayThread1" prefHeight="350.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-       <TextArea prefHeight="350.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+       <TextArea fx:id="displayThread1" prefHeight="350.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <TextArea fx:id="displayThread2" prefHeight="350.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label text="Window 1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Window 2" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label fx:id="currentTicketNum" GridPane.columnIndex="6" />
+      <Label text="Current number" GridPane.columnIndex="4" />
    </children>
 </GridPane>

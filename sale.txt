@@ -1,0 +1,10 @@
+ Window 1 has sold ticket: 1
+ Window 1 has sold ticket: 3
+ Window 1 has sold ticket: 27
+ Window 1 has sold ticket: 28
+ Window 1 has sold ticket: 20
+ Window 2 has sold ticket: 18
+ Window 2 has sold ticket: 24
+ Window 2 has sold ticket: 22
+ Window 2 has sold ticket: 31
+ Window 2 has sold ticket: 21
