@@ -1,10 +1,10 @@
-# TheaterTicketingSystem
+# Theater Ticketing System
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This is Movies Ticketing System that uses 
+This is Movies Ticketing System simulation that uses 
 Threads to sell movie tickets in simultaneously without disturbing each other and saves the ticket sale records of these two windows into a log file sale.txt
 
 Note: you can generate the ticket numbers randomly 
